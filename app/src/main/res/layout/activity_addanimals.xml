@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".addanimals">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="345dp"
+        android:layout_height="212dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbars"
+        app:srcCompat="@drawable/add_images" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Tambah hewan peternakan"
+        app:titleTextColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="66dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="56dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbars"
+        tools:srcCompat="@drawable/add_images" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/dark"
+        app:boxStrokeColor="@color/dark"
+        app:counterTextColor="@color/dark"
+        app:errorEnabled="true"
+        app:helperTextTextColor="@color/dark"
+        app:hintTextColor="@color/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:placeholderTextColor="@color/dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/txtinput_style"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Nama hewan..."
+            android:shadowColor="@color/dark"
+            android:textColor="@color/dark"
+            android:textColorHighlight="@color/dark"
+            android:textColorHint="@color/dark"
+            android:textColorLink="@color/dark"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputType"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/dark"
+        app:boxStrokeColor="@color/dark"
+        app:boxStrokeErrorColor="@color/dark"
+        app:counterOverflowTextColor="@color/dark"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/dark"
+        app:hintTextColor="@color/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputName">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txtinput_style"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Jenis hewan..."
+            android:shadowColor="@color/dark"
+            android:textColor="@color/dark"
+            android:textColorHighlight="@color/dark"
+            android:textColorHint="@color/dark"
+            android:textColorLink="@color/dark"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAge"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/dark"
+        app:boxStrokeColor="@color/dark"
+        app:boxStrokeErrorColor="@color/dark"
+        app:counterOverflowTextColor="@color/dark"
+        app:errorEnabled="true"
+        app:errorTextColor="@color/dark"
+        app:hintTextColor="@color/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputType">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txtinput_style"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Usia hewan..."
+            android:inputType="phone"
+            android:textColor="@color/dark"
+            android:textColorHighlight="@color/dark"
+            android:textColorHint="@color/dark"
+            android:textColorLink="@color/dark"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/dark"
+        android:fontFamily="@font/poppins_bold"
+        android:elevation="30dp"
+        android:text="Tambah"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAge" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
